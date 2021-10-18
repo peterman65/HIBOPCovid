@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>metest</groupId>
+    <artifactId>CovidSimMaveV0_20210312</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <name>CovidSimMavenV0_20210406</name>
+   
+    <repositories>
+  <repository>
+    <id>bedatadriven</id>
+    <name>bedatadriven public repo</name>
+    <url>https://nexus.bedatadriven.com/content/groups/public/</url>
+  </repository>
+</repositories>
+
+    <dependencies>
+        
+        <dependency>
+    <groupId>org.renjin</groupId>
+    <artifactId>renjin-script-engine</artifactId>
+    <version>3.5-beta76</version>
+</dependency>
+
+   <!-- https://mvnrepository.com/artifact/org.renjin/renjin-core -->
+<dependency>
+    <groupId>org.renjin</groupId>
+    <artifactId>renjin-core</artifactId>
+    <version>3.5-beta75</version>
+</dependency>
+
+        <dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jfreechart</artifactId>
+    <version>1.5.3</version>
+</dependency>
+        <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-math3</artifactId>
+    <version>3.6.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.renjin.cran/car -->
+
+      <dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>survival</artifactId>
+    <version>2.44-1.1-b2</version>
+</dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.renjin.cran/forecast -->
+        
+<dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>forecast</artifactId>
+    <version>8.4-b9</version>
+</dependency>
+
+       <!-- https://mvnrepository.com/artifact/org.renjin.cran/cmprsk -->
+
+<dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>cmprsk</artifactId>
+    <version>2.2-8-b1</version>
+</dependency>
+
+<dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>car</artifactId>
+    <version>2.0-21-b36</version>
+</dependency>
+
+
+<dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>MASS</artifactId>
+    <version>7.3-51.4-b10</version>
+</dependency>
+
+<dependency>
+            <groupId>com.toedter</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+</dependency> 
+<!-- https://mvnrepository.com/artifact/org.renjin/parallel -->
+
+<dependency>
+    <groupId>org.renjin</groupId>
+    <artifactId>parallel</artifactId>
+    <version>0.9.2709</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.renjin.cran/tseries -->
+
+  
+<dependency>
+    <groupId>org.renjin.cran</groupId>
+    <artifactId>tseries</artifactId>
+    <version>0.10-47-b1</version>
+</dependency>
+
+<dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE120</version>
+        </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.jfree/jcommon -->
+<dependency>
+    <groupId>org.jfree</groupId>
+    <artifactId>jcommon</artifactId>
+    <version>1.0.24</version>
+</dependency>
+        <dependency>
+            <groupId>com.ibm.icu</groupId>
+            <artifactId>icu4j</artifactId>
+            <version>59.1</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+        
+
+
+    </dependencies>
+    
+
+
+
+    
+    
+    	<build>
+            
+            
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.3.1</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.6</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<!--outputDirectory>${basedir}/target/resources</outputDirectory--> 
+                                                <outputDirectory>${project.build.directory}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>resources</directory>
+									<filtering>true</filtering> 
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/lib</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+                                 <version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>CovidSim</mainClass>
+						</manifest>
+						<manifestEntries>
+							<Class-Path>.</Class-Path>
+						</manifestEntries>
+					</archive>
+ 
+					<finalName>CovidSim</finalName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+    
+    
+</project>
