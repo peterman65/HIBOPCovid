@@ -16,7 +16,7 @@ In order to install the software you can use the windows installer provided in t
 Also, you can download the folder "Executable without installation", in this folder there is the executable version of the program too. If your operative system is a Windows one you can double-click on HIBOP-Covid.exe. In other case you can execute the comand "java -jar CovidSim.jar" in a command shell in order to launch the application.
 
 
-<p align="right"> November 2021 </p>
+***<p align="right"> November 2021 </p>***
 
 Authors:
 
