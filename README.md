@@ -15,16 +15,17 @@ In order to install the software you can use the windows installer provided in t
 
 Also, you can download the folder "Executable without installation", in this folder there is the executable version of the program too. If your operative system is a Windows one you can double-click on HIBOP-Covid.exe. In other case you can execute the comand "java -jar CovidSim.jar" in a command shell in order to launch the application.
 
-                                                                                                                  Noviembre 2021
+
+<p align="right"> November 2021 </p>
 
 Authors:
 
-Angel Borque      aborque@comz.org    Dept. of Urology, Miguel Servet University Hospital  and IIS, Zaragoza, Spain
-Ana C. Cebrián    acebrian@unizar.es  Dept. of Statistical Methods, University of Zaragoza, Spain
-Luis M. Esteban   lmeste@unizar.es    Escuela Universitaria Politécnica de la Almunia, University of Zaragoza, Spain
-Miguel Lafuente   miguelllb@unizar.es Dept. of Statistical Methods, University of Zaragoza, Spain
-Javier López      javierl@unizar.es   Dept. of Statistical Methods, University of Zaragoza, Spain
-Pedro Mateo       mateo@unizar.es     Dept. of Statistical Methods, University of Zaragoza, Spain
-José A. Moler     jmoler@unavarra.es  Dept. of Statistics and Operational Research, Public University of Navarra, Spain
-Ana Pérez         anapp@unizar.es     Dept. of Statistical Methods, University of Zaragoza, Spain
-Gerardo Sanz      gerardo@unizar.es   Dept. of Statistical Methods, University of Zaragoza, Spain
+- Angel Borque      aborque@comz.org    Dept. of Urology, Miguel Servet University Hospital  and IIS, Zaragoza, Spain
+- Ana C. Cebrián    acebrian@unizar.es  Dept. of Statistical Methods, University of Zaragoza, Spain
+- Luis M. Esteban   lmeste@unizar.es    Escuela Universitaria Politécnica de la Almunia, University of Zaragoza, Spain
+- Miguel Lafuente   miguelllb@unizar.es Dept. of Statistical Methods, University of Zaragoza, Spain
+- Javier López      javierl@unizar.es   Dept. of Statistical Methods, University of Zaragoza, Spain
+- Pedro Mateo       mateo@unizar.es     Dept. of Statistical Methods, University of Zaragoza, Spain
+- José A. Moler     jmoler@unavarra.es  Dept. of Statistics and Operational Research, Public University of Navarra, Spain
+- Ana Pérez         anapp@unizar.es     Dept. of Statistical Methods, University of Zaragoza, Spain
+- Gerardo Sanz      gerardo@unizar.es   Dept. of Statistical Methods, University of Zaragoza, Spain
