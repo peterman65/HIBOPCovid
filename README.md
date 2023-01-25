@@ -17,3 +17,14 @@ Also, you can download the folder "Executable without installation", in this fol
 
                                                                                                                   Noviembre 2021
 
+Authors:
+
+Angel Borque      aborque@comz.org    Dept. of Urology, Miguel Servet University Hospital  and IIS, Zaragoza, Spain
+Ana C. Cebrián    acebrian@unizar.es  Dept. of Statistical Methods, University of Zaragoza, Spain
+Luis M. Esteban   lmeste@unizar.es    Escuela Universitaria Politécnica de la Almunia, University of Zaragoza, Spain
+Miguel Lafuente   miguelllb@unizar.es Dept. of Statistical Methods, University of Zaragoza, Spain
+Javier López      javierl@unizar.es   Dept. of Statistical Methods, University of Zaragoza, Spain
+Pedro Mateo       mateo@unizar.es     Dept. of Statistical Methods, University of Zaragoza, Spain
+José A. Moler     jmoler@unavarra.es  Dept. of Statistics and Operational Research, Public University of Navarra, Spain
+Ana Pérez         anapp@unizar.es     Dept. of Statistical Methods, University of Zaragoza, Spain
+Gerardo Sanz      gerardo@unizar.es   Dept. of Statistical Methods, University of Zaragoza, Spain
